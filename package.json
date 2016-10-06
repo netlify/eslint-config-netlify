@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netlify/netlify-eslint.git"
+    "url": "git+https://github.com/netlify/eslint-config-netlify.git"
   },
   "author": "Andrey Okonetchnikov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/netlify/netlify-eslint/issues"
+    "url": "https://github.com/netlify/eslint-config-netlify/issues"
   },
-  "homepage": "https://github.com/netlify/netlify-eslint#readme",
+  "homepage": "https://github.com/netlify/eslint-config-netlify#readme",
   "dependencies": {
     "babel-eslint": "^7.0.0",
     "eslint": "^3.7.1",
