@@ -49,7 +49,6 @@ module.exports = {
     // Import
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
-        'wallaby.config.js',
         'webpack*.js',
         '**/*.spec.js',
       ],
