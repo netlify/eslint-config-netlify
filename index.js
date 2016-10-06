@@ -15,7 +15,7 @@ module.exports = {
     'class-property',
   ],
   settings: {
-    'import/resolver': 'webpack'
+    'import/resolver': 'webpack',
   },
   globals: {
     netlify: true,
@@ -48,7 +48,11 @@ module.exports = {
 
     // Import
     'import/no-extraneous-dependencies': ['error', {
-      'devDependencies': ['wallaby*', 'webpack*', '**/*.spec.js']
-    }]
+      devDependencies: [
+        'wallaby.config.js',
+        'webpack*.js',
+        '**/*.spec.js',
+      ],
+    }],
   },
 };
