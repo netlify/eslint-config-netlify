@@ -49,7 +49,7 @@ module.exports = {
     // Import
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
-        'webpack*.js',
+        '**/webpack*.js',
         '**/*.spec.js',
       ],
     }],
