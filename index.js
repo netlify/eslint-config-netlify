@@ -14,6 +14,9 @@ module.exports = {
   plugins: [
     'class-property',
   ],
+  settings: {
+    'import/resolver': 'webpack'
+  },
   globals: {
     netlify: true,
     CMS_ENV: true,
