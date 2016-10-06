@@ -1,0 +1,40 @@
+{
+  "name": "eslint-config-netlify",
+  "version": "0.1.0",
+  "description": "ESLint rules for Netlify JavaScript projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "deps": "npm-check -s",
+    "deps:update": "npm-check -u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/netlify-eslint.git"
+  },
+  "author": "Andrey Okonetchnikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netlify/netlify-eslint/issues"
+  },
+  "homepage": "https://github.com/netlify/netlify-eslint#readme",
+  "dependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-class-property": "^1.0.1",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
+  },
+  "peerDependencies": {
+    "eslint": "3.x"
+  },
+  "devDependencies": {
+    "npm-check": "^5.0.1"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
+  }
+}
