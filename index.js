@@ -45,5 +45,10 @@ module.exports = {
 
     // Class properties
     'class-property/class-property-semicolon': 2,
+
+    // Import
+    'import/no-extraneous-dependencies': ['error', {
+      'devDependencies': ['wallaby*', 'webpack*', '**/*.spec.js']
+    }]
   },
 };
