@@ -34,7 +34,7 @@ module.exports = {
     }],
     'new-cap': [2, {
       newIsCap: true,
-      capIsNewExceptions: ['Immutable', 'List', 'Map', 'Set']
+      capIsNewExceptions: ['Immutable', 'List', 'Map', 'Set', 'OrderedMap']
     }],
 
     // React
