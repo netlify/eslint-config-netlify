@@ -32,6 +32,10 @@ module.exports = {
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
     }],
+    'new-cap': [2, {
+      newIsCap: true,
+      capIsNewExceptions: ['Immutable', 'List', 'Map', 'Set']
+    }],
 
     // React
     'react/jsx-handler-names': ['error', {
