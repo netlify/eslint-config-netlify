@@ -19,7 +19,6 @@ module.exports = {
   },
   globals: {
     netlify: true,
-    CMS_ENV: true,
   },
   rules: {
     // Overrides from the AirBnb configs
