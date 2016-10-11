@@ -23,6 +23,10 @@ module.exports = {
   rules: {
     // Overrides from the AirBnb configs
     'no-console': 'error',
+    'no-shadow': ['warn', {
+        'builtinGlobals': true,
+        'allow': ['resolve', 'reject', 'done', 'cb']
+    }],
     'template-curly-spacing': ['error', 'always'],
     'jsx-quotes': ['error', 'prefer-double'],
     'max-len': ['error', 160, 2, {
