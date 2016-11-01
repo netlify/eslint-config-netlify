@@ -24,8 +24,8 @@ module.exports = {
     // Overrides from the AirBnb configs
     'no-console': 'error',
     'no-shadow': ['warn', {
-        'builtinGlobals': true,
-        'allow': ['resolve', 'reject', 'done', 'cb']
+      builtinGlobals: true,
+      allow: ['resolve', 'reject', 'done', 'cb'],
     }],
     'template-curly-spacing': ['error', 'always'],
     'jsx-quotes': ['error', 'prefer-double'],
@@ -37,7 +37,7 @@ module.exports = {
     }],
     'new-cap': [2, {
       newIsCap: true,
-      capIsNewExceptions: ['Immutable', 'List', 'Map', 'Set', 'OrderedMap']
+      capIsNewExceptions: ['Immutable', 'List', 'Map', 'Set', 'OrderedMap'],
     }],
 
     // React
