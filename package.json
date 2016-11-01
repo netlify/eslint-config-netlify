@@ -1,17 +1,15 @@
 {
   "name": "eslint-config-netlify",
-  "version": "0.1.0",
   "description": "ESLint rules for Netlify JavaScript projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint",
     "lint": "eslint .",
-    "deps": "npm-check -s",
-    "deps:update": "npm-check -u"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netlify/eslint-config-netlify.git"
+    "url": "https://github.com/netlify/eslint-config-netlify.git"
   },
   "author": "Andrey Okonetchnikov",
   "license": "MIT",
@@ -30,12 +28,19 @@
     "eslint-plugin-react": "^6.3.0"
   },
   "peerDependencies": {
-    "eslint": "3.x"
+    "eslint": "3.x",
+    "webpack": "^1.11.0 || ^2.1.0-beta || ^2.1.0"
   },
   "devDependencies": {
-    "npm-check": "^5.0.1"
+    "cz-conventional-changelog": "^1.2.0",
+    "semantic-release": "^4.3.5"
   },
   "eslintConfig": {
     "extends": "./index.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
