@@ -5,7 +5,15 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint .",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": "jsonlint"
   },
   "repository": {
     "type": "git",
@@ -33,6 +41,9 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^1.2.0",
+    "husky": "^0.11.9",
+    "jsonlint": "^1.6.2",
+    "lint-staged": "^3.2.0",
     "semantic-release": "^4.3.5"
   },
   "eslintConfig": {
