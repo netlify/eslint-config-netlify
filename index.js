@@ -22,14 +22,16 @@ module.exports = {
   },
   rules: {
     // Overrides from the AirBnb configs
-    'no-console': 'error',
-    'no-shadow': ['warn', {
+    'no-console': 2,
+    'no-shadow': [1, {
       builtinGlobals: true,
       allow: ['resolve', 'reject', 'done', 'cb'],
     }],
-    'template-curly-spacing': ['error', 'always'],
-    'jsx-quotes': ['error', 'prefer-double'],
-    'max-len': ['error', 160, 2, {
+    'template-curly-spacing': [2, 'always'],
+    'jsx-quotes': [2, 'prefer-double'],
+    'max-len': [2, {
+      code: 160,
+      tabWidth: 2,
       ignoreUrls: true,
       ignoreComments: false,
       ignoreStrings: true,
@@ -41,20 +43,20 @@ module.exports = {
     }],
 
     // React
-    'react/jsx-handler-names': ['error', {
+    'react/jsx-handler-names': [2, {
       eventHandlerPrefix: 'handle',
       eventHandlerPropPrefix: 'on',
     }],
-    'react/jsx-key': 'error',
-    'react/jsx-max-props-per-line': ['error', { maximum: 2 }],
-    'react/no-direct-mutation-state': 'error',
-    'react/jsx-filename-extension': ['off', { extensions: ['.jsx'] }],
+    'react/jsx-key': 2,
+    'react/jsx-max-props-per-line': [2, { maximum: 2 }],
+    'react/no-direct-mutation-state': 2,
+    'react/jsx-filename-extension': 0,
 
     // Class properties
     'class-property/class-property-semicolon': 2,
 
     // Import
-    'import/no-extraneous-dependencies': ['error', {
+    'import/no-extraneous-dependencies': [2, {
       devDependencies: [
         '**/webpack*.js',
         '**/*.spec.js',
