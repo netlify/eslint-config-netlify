@@ -62,6 +62,7 @@ module.exports = {
       devDependencies: [
         '**/webpack*.js',
         '**/*.spec.js',
+        '**/*.stories.js',
       ],
     }],
   },
