@@ -28,6 +28,7 @@ module.exports = {
       allow: ['resolve', 'reject', 'done', 'cb'],
     }],
     'template-curly-spacing': [2, 'always'],
+    "quotes": [2, "double", "avoid-escape"],
     'jsx-quotes': [2, 'prefer-double'],
     'max-len': [2, {
       code: 100,
