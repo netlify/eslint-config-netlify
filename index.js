@@ -63,6 +63,7 @@ module.exports = {
         '**/webpack*.js',
         '**/*.spec.js',
         '**/*.stories.js',
+        '**/.storybook/*',
       ],
     }],
   },
