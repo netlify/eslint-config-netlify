@@ -1,5 +1,5 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: "babel-eslint",
   env: {
     es6: true,
     browser: true,
@@ -9,27 +9,28 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'eslint-config-airbnb',
+    "eslint-config-airbnb",
   ],
   plugins: [
-    'class-property',
+    "class-property",
   ],
   settings: {
-    'import/resolver': 'webpack',
+    "import/resolver": "webpack",
   },
   globals: {
     netlify: true,
   },
   rules: {
     // Overrides from the AirBnb configs
-    'no-console': 2,
-    'no-shadow': [1, {
+    quotes: [2, "double"],
+    "no-console": 2,
+    "no-shadow": [1, {
       builtinGlobals: true,
-      allow: ['resolve', 'reject', 'done', 'cb'],
+      allow: ["resolve", "reject", "done", "cb"],
     }],
-    'template-curly-spacing': [2, 'always'],
-    'jsx-quotes': [2, 'prefer-double'],
-    'max-len': [2, {
+    "template-curly-spacing": [2, "always"],
+    "jsx-quotes": [2, "prefer-double"],
+    "max-len": [2, {
       code: 100,
       comments: 100,
       tabWidth: 2,
@@ -39,31 +40,31 @@ module.exports = {
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
     }],
-    'new-cap': [2, {
+    "new-cap": [2, {
       newIsCap: true,
-      capIsNewExceptions: ['Immutable', 'List', 'Map', 'Set', 'OrderedMap'],
+      capIsNewExceptions: ["Immutable", "List", "Map", "Set", "OrderedMap"],
     }],
 
     // React
-    'react/jsx-handler-names': [2, {
-      eventHandlerPrefix: 'handle',
-      eventHandlerPropPrefix: 'on',
+    "react/jsx-handler-names": [2, {
+      eventHandlerPrefix: "handle",
+      eventHandlerPropPrefix: "on",
     }],
-    'react/jsx-key': 2,
-    'react/jsx-max-props-per-line': [2, { maximum: 2 }],
-    'react/no-direct-mutation-state': 2,
-    'react/jsx-filename-extension': 0,
+    "react/jsx-key": 2,
+    "react/jsx-max-props-per-line": [2, { maximum: 2 }],
+    "react/no-direct-mutation-state": 2,
+    "react/jsx-filename-extension": 0,
 
     // Class properties
-    'class-property/class-property-semicolon': 2,
+    "class-property/class-property-semicolon": 2,
 
     // Import
-    'import/no-extraneous-dependencies': [2, {
+    "import/no-extraneous-dependencies": [2, {
       devDependencies: [
-        '**/webpack*.js',
-        '**/*.spec.js',
-        '**/*.stories.js',
-        '**/.storybook/*',
+        "**/webpack*.js",
+        "**/*.spec.js",
+        "**/*.stories.js",
+        "**/.storybook/*",
       ],
     }],
   },
