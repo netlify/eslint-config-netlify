@@ -1,5 +1,6 @@
 {
   "name": "eslint-config-netlify",
+  "version": "0.1.0",
   "description": "ESLint rules for Netlify JavaScript projects",
   "main": "index.js",
   "scripts": {
