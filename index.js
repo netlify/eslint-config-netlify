@@ -9,7 +9,7 @@ module.exports = {
     jest: true,
   },
   extends: [
-    "google",
+    "eslint-config-airbnb",
   ],
   plugins: [
     "class-property",
