@@ -21,42 +21,41 @@ module.exports = {
     netlify: true,
   },
   rules: {
-    // Overrides from the AirBnb configs
-    quotes: [2, "double"],
+    // Overrides
+    "quotes": 0,
+    "no-plusplus": 0,
+    "no-param-reassign": 0,
+    "no-trailing-spaces": 0,
+    "space-infix-ops": 0,
+    "space-before-function-paren": 0,
+    "no-underscore-dangle": 0,
+    "class-methods-use-this": 0,
+    "no-bitwise": 0,
+    "key-spacing": [0, { beforeColon: false, afterColon: true, mode: "minimum" }],
+    "max-len": [1, 120, 2, { ignoreComments: true }],
+    "quote-props": [1, "consistent-as-needed"],
+    "no-cond-assign": [2, "except-parens"],
+    "no-unused-vars": [1, { vars: "local", args: "none" }],
+    "import/imports-first": 1,
+    "comma-dangle": 1,
+    "object-shorthand": 1,
+    "guard-for-in": 1,
+    "prefer-template": 1,
+    "new-cap": 1,
     "no-console": 2,
     "no-shadow": [1, {
       builtinGlobals: true,
-      allow: ["resolve", "reject", "done", "cb"],
+      allow: ["resolve", "reject", "done", "cb", "status", "history", "name", "Map"],
     }],
-    "template-curly-spacing": [2, "always"],
-    "jsx-quotes": [2, "prefer-double"],
-    "max-len": [2, {
-      code: 100,
-      comments: 100,
-      tabWidth: 2,
-      ignoreUrls: true,
-      ignoreComments: true,
-      ignoreTrailingComments: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
-    "new-cap": [2, {
-      newIsCap: true,
-      capIsNewExceptions: ["Immutable", "List", "Map", "Set", "OrderedMap"],
-    }],
-
-    // React
-    "react/jsx-handler-names": [2, {
-      eventHandlerPrefix: "handle",
-      eventHandlerPropPrefix: "on",
-    }],
-    "react/jsx-key": 2,
-    "react/jsx-max-props-per-line": [2, { maximum: 2 }],
+    "template-curly-spacing": [1, "always"],
+    "react/forbid-prop-types": 0,
     "react/no-direct-mutation-state": 2,
     "react/jsx-filename-extension": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 1,
 
     // Class properties
-    "class-property/class-property-semicolon": 2,
+    "class-property/class-property-semicolon": 1,
 
     // Import
     "import/no-extraneous-dependencies": [2, {

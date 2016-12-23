@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-netlify",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "ESLint rules for Netlify JavaScript projects",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "https://github.com/netlify/eslint-config-netlify.git"
   },
-  "author": "Andrey Okonetchnikov",
+  "author": "Netlify Team",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/netlify/eslint-config-netlify/issues"
