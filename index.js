@@ -22,36 +22,14 @@ module.exports = {
   },
   rules: {
     // Overrides from the AirBnb configs
-    quotes: [2, "double"],
+    "quotes": 0,
     "no-console": 2,
     "no-shadow": [1, {
       builtinGlobals: true,
-      allow: ["resolve", "reject", "done", "cb"],
+      allow: ["resolve", "reject", "done", "cb", "status"],
     }],
     "template-curly-spacing": [2, "always"],
-    "jsx-quotes": [2, "prefer-double"],
-    "max-len": [2, {
-      code: 100,
-      comments: 100,
-      tabWidth: 2,
-      ignoreUrls: true,
-      ignoreComments: true,
-      ignoreTrailingComments: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
-    "new-cap": [2, {
-      newIsCap: true,
-      capIsNewExceptions: ["Immutable", "List", "Map", "Set", "OrderedMap"],
-    }],
-
-    // React
-    "react/jsx-handler-names": [2, {
-      eventHandlerPrefix: "handle",
-      eventHandlerPropPrefix: "on",
-    }],
     "react/jsx-key": 2,
-    "react/jsx-max-props-per-line": [2, { maximum: 2 }],
     "react/no-direct-mutation-state": 2,
     "react/jsx-filename-extension": 0,
 
