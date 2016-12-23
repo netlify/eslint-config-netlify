@@ -9,7 +9,7 @@ module.exports = {
     jest: true,
   },
   extends: [
-    "eslint-config-airbnb",
+    "google",
   ],
   plugins: [
     "class-property",
@@ -21,14 +21,14 @@ module.exports = {
     netlify: true,
   },
   rules: {
-    // Overrides from the AirBnb configs
+    // Overrides
     "quotes": 0,
     "no-console": 2,
     "no-shadow": [1, {
       builtinGlobals: true,
       allow: ["resolve", "reject", "done", "cb", "status"],
     }],
-    "template-curly-spacing": [2, "always"],
+    "template-curly-spacing": [1, "always"],
     "react/jsx-key": 2,
     "react/no-direct-mutation-state": 2,
     "react/jsx-filename-extension": 0,
