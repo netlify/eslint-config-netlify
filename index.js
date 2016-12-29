@@ -41,11 +41,13 @@ module.exports = {
     "object-shorthand": 1,
     "guard-for-in": 1,
     "prefer-template": 1,
-    "new-cap": 1,
+    "new-cap": [1, { 
+      capIsNewExceptions: ["List", "Map", "OrderedMap", "Set", "OrderedSet", "Stack", "Range", "Repeat", "Record"],
+    }],
     "no-console": 2,
     "no-shadow": [1, {
       builtinGlobals: true,
-      allow: ["resolve", "reject", "done", "cb", "status", "history", "name", "Map"],
+      allow: ["resolve", "reject", "done", "cb", "status", "history", "name", "event", "Map"],
     }],
     "template-curly-spacing": [1, "always"],
     "react/forbid-prop-types": 0,
